@@ -15,15 +15,15 @@ else
 }
 
 //Variables
-$Id = $_REQUEST['Id'];
-$First_Name = $_REQUEST['First_Name'];
-$Last_Name = $_REQUEST['Last_Name'];
-$Course_Id = $_REQUEST['Course_Id'];
-$Course_Name = $_REQUEST['Course_Name'];
-$Notes = $_REQUEST['Notes'];
+$student_Id = $_REQUEST['student_Id'];
+$first_Name = $_REQUEST['first_Name'];
+$last_Name = $_REQUEST['last_Name'];
+$course_Id = $_REQUEST['course_Id'];
+$course_Name = $_REQUEST['course_Name'];
+$notes = $_REQUEST['notes'];
 
 //Query
-$query = "INSERT INTO simple_table VALUES ('$Id', '$First_Name', '$Last_Name','$Course_Id', '$Course_Name', '$Notes');";
+$query = "INSERT INTO simple_table VALUES ('$student_Id', '$first_Name', '$last_Name','$course_Id', '$course_Name', '$notes');";
 
 
 //Submit query
