@@ -11,7 +11,7 @@ $(document).ready(function(){
  $('.button').click(function(){
  var clickBtnName = $(this).attr('name');
  var ajaxurl = 'http://localhost/SQLDeleteHandler.php';
- var data = {'id': clickBtnName};
+ var data = {'student_Id': clickBtnName};
  $.post(ajaxurl, data, function(response) {
  window.location.href="http://localhost/simple_homepage.php";
 });
@@ -56,7 +56,7 @@ action="http://localhost/SQLInsertHandler.php">
 <p>First Name:&nbsp <input type="text" name="first_Name" size="10"
 maxlength="20" /></p>
 <p>Last Name:&nbsp <input type="text" name="last_Name" size="10" 
-maxlength="20" /></p>
+maxlength=”20” /></p>
 <p>Course Id:&nbsp <input type="text" name="course_Id" size="10"
 maxlength="10" /></p>
 <p>Course Name:&nbsp <input type="text" name="course_Name" size="10" 
