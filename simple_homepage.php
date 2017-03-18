@@ -40,7 +40,7 @@ $resultset = mysqli_query($connection,$query);
 
 //Display table and delete button
 while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {
-	echo $row[0]." ".$row[1]." ".$row[2]." ".$row[3]."<input type=\"submit\" class=\"button\" name=\"".$row[0]."\"
+	echo $row[0]." ".$row[1]." ".$row[2]." ".$row[3]."  ".$row[4]." ".$row[5]."<input type=\"submit\" class=\"button\" name=\"".$row[0]."\"
 value=\"delete\"/><br>";
 }
 
