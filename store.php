@@ -48,20 +48,26 @@ value=\"delete\"/><br>";
 ?>
 
 <!-- WRITE FORM-->
+
 <form enctype="multipart/form-data"
 action="http://localhost/SQLInsertHandler.php">
-<p>Id:&nbsp <input type="text" name="Id" size="10" maxlength="11"
+<p>Student Id:&nbsp <input type="text" name="Id" size="10" maxlength="11"
 /></p>
-<p>Name:&nbsp <input type="text" name="Name" size="10"
+<p>First Name:&nbsp <input type="text" name="First_Name" size="10"
 maxlength="20" /></p>
-<p>Quantity:&nbsp <input type="text" name="Quantity"
-size="10" maxlength="30" /></p>
-<p>Price:&nbsp <input type="text" name="Price" size="10"
+<p>Last Name:&nbsp <input type=”text” name=”Last_Name” size=”10” 
+maxlength=”20” /></p>
+<p>Course Id:&nbsp <input type="text" name="Course_Id" size="10"
 maxlength="10" /></p>
+<p>Course Name:&nbsp <input type=”text” name=”Course_Name” size=”10” 
+maxlength=”20” /></p>
+<p>Notes:&nbsp <input type=”text” name=”Notes” size=”50” 
+maxlength=”100” /></p>
 <br>
 <input type="submit" value="Add item" /> &nbsp
 <input type="reset" />
 </form>
+
 
 
 </body>
