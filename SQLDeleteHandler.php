@@ -1,6 +1,5 @@
 <?php
-//Jason Savath
-//Lab8
+
 
 // Obtain a connection object by connecting to the db
 $connection = @mysqli_connect ('localhost', 'root',
@@ -15,13 +14,12 @@ else
 }
 
 //Variables
-$Id = $_REQUEST['id'];
+$student_Id = $_REQUEST['student_Id'];
 
 //Write query
-$query = "DELETE FROM simple_table WHERE id='$Id';";
+$query = "DELETE FROM simple_table WHERE student_Id='$student_Id';";
 
 //Do query
 mysqli_query($connection,$query);
 echo "Deleted successfully from the database";
 ?>
-
