@@ -1,9 +1,6 @@
 <html>
-<!-- Jason Savath Lab 8 -->
-
-
 <head>
-<title> My Store Web Application </title>
+<title> Jot Homepage </title>
 
 <script
 src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.mi
@@ -27,7 +24,7 @@ $(document).ready(function(){
 <?php
 // Obtain a connection object by connecting to the db
 $connection = @mysqli_connect ('127.0.0.1','root',
-'password', 'lab8'); // please fill these parameters with the actual data
+'password', 'Jot_Database'); // please fill these parameters with the actual data
 if(mysqli_connect_errno())
 {
  echo "<h4>Failed to connect to MySQL: </h4>".mysqli_connect_error();
@@ -43,8 +40,8 @@ $resultset = mysqli_query($connection,$query);
 
 //Display table and delete button
 while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {
-	echo "<table>".$row[0]." ".$row[1]." ".$row[2]." ".$row[3]."<input type=\"submit\" class=\"button\" name=\"".$row[0]."\"
-value=\"delete\"/><br></table>";
+	echo $row[0]." ".$row[1]." ".$row[2]." ".$row[3]."<input type=\"submit\" class=\"button\" name=\"".$row[0]."\"
+value=\"delete\"/><br>";
 }
 
 
