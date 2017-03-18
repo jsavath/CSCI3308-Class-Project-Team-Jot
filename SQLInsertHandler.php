@@ -1,6 +1,4 @@
 <?php
-//Jason Savath
-//Lab 8
 
 // Obtain a connection object by connecting to the db
 $connection = @mysqli_connect ('localhost', 'root',
