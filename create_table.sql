@@ -6,4 +6,4 @@ create table if not exists `simple_table` (
  `course_Name` varchar(10) not null,
  `notes` varchar(100) not null,
  primary key (`student_Id`)
-) 
+)
