@@ -23,8 +23,8 @@ $(document).ready(function(){
 <body>
 <?php
 // Obtain a connection object by connecting to the db
-$connection = @mysqli_connect ('127.0.0.1','root',
-'password', 'Jot_Database'); // please fill these parameters with the actual data
+$connection = @mysqli_connect ('localhost','root',
+'password', 'simple_jotdb'); // please fill these parameters with the actual data
 if(mysqli_connect_errno())
 {
  echo "<h4>Failed to connect to MySQL: </h4>".mysqli_connect_error();
@@ -35,7 +35,7 @@ else
 }
 // Query and result set
 
-$query = "Select * from store;";
+$query = "Select * from simple_table;";
 $resultset = mysqli_query($connection,$query);
 
 //Display table and delete button
