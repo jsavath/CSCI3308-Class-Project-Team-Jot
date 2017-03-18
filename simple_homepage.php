@@ -13,7 +13,7 @@ $(document).ready(function(){
  var ajaxurl = 'http://localhost/SQLDeleteHandler.php';
  var data = {'id': clickBtnName};
  $.post(ajaxurl, data, function(response) {
- window.location.href="http://localhost/store.php";
+ window.location.href="http://localhost/simple_homepage.php";
 });
 });
 });
