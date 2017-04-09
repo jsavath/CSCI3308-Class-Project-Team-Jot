@@ -22,4 +22,5 @@ $query = "DELETE FROM simple_table WHERE student_Id='$student_Id';";
 //Do query
 mysqli_query($connection,$query);
 echo "Deleted successfully from the database";
+include 'jot_home.php';
 ?>

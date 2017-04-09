@@ -25,5 +25,5 @@ $query = "INSERT INTO simple_table (student_Id, PasswordHash,first_name, last_na
 //Submit query
 mysqli_query($connection,$query);
 echo "Inserted successfully into the database";
-include 'simple_homepage.php';
+include 'jot_home.php';
 ?>
