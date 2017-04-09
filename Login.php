@@ -31,3 +31,4 @@ if($count==1){
     $_SESSION['loggedin'] = true;
     $_SESSION['student_id'] = $student_id;
 }
+?>
