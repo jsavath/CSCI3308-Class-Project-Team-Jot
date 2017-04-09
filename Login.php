@@ -33,7 +33,7 @@ if($count==1){
     echo "Welcome!";   
 }
 else{
-    echo "Error: Username/password incorrect. Please try again."
+    echo "Error: Username/password incorrect. Please try again.";
 ?>
 
 
