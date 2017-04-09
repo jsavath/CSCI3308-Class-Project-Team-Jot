@@ -65,14 +65,10 @@ action="http://localhost/SQLInsertHandler.php">
 maxlength="20" /></p>
 <p>Last Name:&nbsp <input type="text" name="last_Name" size="10" 
 maxlength=”20” /></p>
-<p>Course Id:&nbsp <input type="text" name="course_Id" size="10"
-maxlength="10" /></p>
-<p>Course Name:&nbsp <input type="text" name="course_Name" size="10" 
-maxlength="20" /></p>
-<p>Notes:&nbsp <input type="text" name="notes" size="50" 
-maxlength="100" /></p>
+<p>Password:&nbsp <input type="password" name="PasswordHash" size="10"
+maxlength="15" /></p>
 <br>
-<input type="submit" value="Add item" /> &nbsp
+<input type="submit" value="Create User" /> &nbsp
 <input type="reset" />
 </form>
 </center>
