@@ -1,10 +1,10 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title> Jot Homepage </title>
+  <link href="jot_home.css" rel="stylesheet">
 
-<script
-src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.mi
-n.js"></script>
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -20,7 +20,32 @@ $(document).ready(function(){
 </script>
 
 </head>
+
+<header class="header_main">
+
+  <div class="Jot">
+    <h1><a href="jot_home.html" style="text-decoration:none">JOT!</a></h1>
+  </div>
+
+  <nav class="main_nav"> <! Navigation Bar >
+    <ul>
+      <li><a href="about_us.html" style="text-decoration:none">About Us</a></li>
+
+      <li><a href="#contact_us_page" style="text-decoration:none">Contact Us</a></li>
+
+      <li><a href="#sign_in_page" style="text-decoration:none">Sign In</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
 <body>
+<img src='jot_background1.png' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
+
+
 <?php
 // Obtain a connection object by connecting to the db
 // Define database access:
@@ -47,12 +72,14 @@ $resultset = mysqli_query($connection,$query);
 
 //Display table and delete button
 while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {
-	echo $row[0]." ".$row[1]." ".$row[2]." ".$row[3]."  ".$row[4]." ".$row[5]."<input type=\"submit\" class=\"button\" name=\"".$row[0]."\"
+  echo $row[0]." ".$row[1]." ".$row[2]." ".$row[3]."  ".$row[4]." ".$row[5]."<input type=\"submit\" class=\"button\" name=\"".$row[0]."\"
 value=\"delete\"/><br>";
 }
 
 
 ?>
+
+
 
 
 <!-- WRITE FORM-->
@@ -88,11 +115,11 @@ maxlength=”20” /></p>
 
 
 <div id="footer">
-	<br>  	
-	<img src="//localhost/logo.png" />
+  <br>    
+  <img src="//localhost/logo.png" />
 </div>
 
-
-
 </body>
+
+
 </html>
