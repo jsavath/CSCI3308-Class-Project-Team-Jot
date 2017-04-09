@@ -4,7 +4,7 @@ $host="localhost"; // Host name
 $username="root";  //Mysql password
 $password="alec"; // Mysql password 
 $db_name="jot"; // Database name 
-$tbl_name="members"; // Table name 
+$tbl_name="simple_table"; // Table name //tb1_name = memebers?
 
 // Connect to server and select databse.
 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
