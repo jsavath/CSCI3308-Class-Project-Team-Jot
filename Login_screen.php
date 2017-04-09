@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+        echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
+    } else {
+        echo "Please log in first to see this page.";
+    }
+?>
 <html>
 <head>
   <meta charset="utf-8">
@@ -15,5 +23,6 @@
         <p class="submit"><input type="submit" name="commit" value="Login"></p>
       </form>
     </div>
+
 </body>
 </html>
