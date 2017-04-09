@@ -19,7 +19,7 @@ $first_Name = $_REQUEST['first_Name'];
 $last_Name = $_REQUEST['last_Name'];
 
 //Query
-$query = "INSERT INTO simple_table VALUES ('$student_Id', HASHBYTES('SHA2_512', '$PasswordHash'), '$first_Name', '$last_Name');";
+$query = "INSERT INTO simple_table (student_Id, PasswordHash, user_id,first_name, last_name, course_Id, course_Name, notes) VALUES('".$student_Id."',SHA512('".$password."'),'".$first_Name."','".$last_Name."',NULL, NULL, NULL);";
 
 
 //Submit query
