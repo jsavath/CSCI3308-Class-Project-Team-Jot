@@ -23,8 +23,15 @@ $(document).ready(function(){
 <body>
 <?php
 // Obtain a connection object by connecting to the db
-$connection = @mysqli_connect ('localhost','root',
-'password', 'simple_jotdb'); // please fill these parameters with the actual data
+// Define database access:
+DEFINE ('host', 'localhost');
+DEFINE ('user', 'root');
+DEFINE ('password', 'alec');
+DEFINE ('dbName', 'jot');
+
+
+
+$connection = @mysqli_connect (host,user,password,dbName); // please fill these parameters with the actual data
 if(mysqli_connect_errno())
 {
  echo "<h4>Failed to connect to MySQL: </h4>".mysqli_connect_error();
@@ -47,8 +54,9 @@ value=\"delete\"/><br>";
 
 ?>
 
-<!-- WRITE FORM-->
 
+<!-- WRITE FORM-->
+<center>
 <form enctype="multipart/form-data"
 action="http://localhost/SQLInsertHandler.php">
 <p>Student Id:&nbsp <input type="text" name="student_Id" size="10" maxlength="11"
@@ -67,6 +75,14 @@ maxlength="100" /></p>
 <input type="submit" value="Add item" /> &nbsp
 <input type="reset" />
 </form>
+</center>
+
+
+
+<div id="footer">
+	<br>  	
+	<img src="//localhost/logo.png" />
+</div>
 
 
 
