@@ -14,14 +14,12 @@ else
 
 //Variables
 $student_Id = $_REQUEST['student_Id'];
+$PasswordHash = $_REQUEST['PasswordHash'];
 $first_Name = $_REQUEST['first_Name'];
 $last_Name = $_REQUEST['last_Name'];
-$course_Id = $_REQUEST['course_Id'];
-$course_Name = $_REQUEST['course_Name'];
-$notes = $_REQUEST['notes'];
 
 //Query
-$query = "INSERT INTO simple_table VALUES ('$student_Id', '$first_Name', '$last_Name','$course_Id', '$course_Name', '$notes');";
+$query = "INSERT INTO simple_table VALUES ('$student_Id', HASHBYTES('SHA2_512', '$PasswordHash'), '$first_Name', '$last_Name');";
 
 
 //Submit query
