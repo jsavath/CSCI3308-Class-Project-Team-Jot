@@ -30,10 +30,9 @@ if($count==1){
     session_start();
     $_SESSION['loggedin'] = true;
     $_SESSION['student_id'] = $student_id;
-    echo "Welcome!";   
+    
+    header('Location:Login_screen.php');
 }
-else{
-    echo "Error: Username/password incorrect. Please try again.";
 ?>
 
 
