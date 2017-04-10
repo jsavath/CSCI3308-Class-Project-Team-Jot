@@ -40,6 +40,7 @@
           <p class="create_user"><input type="submit" name="commit" value="Sign Up"></p>
         </p> 
         </form>
-        </div>   
-</body>
+        </div>  
+
+    
 </html>

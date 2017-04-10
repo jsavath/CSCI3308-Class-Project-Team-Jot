@@ -33,7 +33,7 @@ $(document).ready(function(){
 
       <li><a href="#contact_us_page" style="text-decoration:none">Contact Us</a></li>
 
-      <li><a href="#sign_in_page" style="text-decoration:none">Sign In</a></li>
+      <li><a href="Login_screen.php" style="text-decoration:none">Sign In</a></li>
     </ul>
   </nav>
 </header>
@@ -67,7 +67,7 @@ else
 }
 // Query and result set
 
-$query = "Select * from simple_table;";
+$query = "SELECT * FROM simple_table;";
 $resultset = mysqli_query($connection,$query);
 
 //Display table and delete button

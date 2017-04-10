@@ -2,6 +2,9 @@
 <head>
 <title> Jot create Account </title>
 
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 <script>
 $(document).ready(function(){
  $('.button').click(function(){
@@ -9,7 +12,7 @@ $(document).ready(function(){
  var ajaxurl = 'http://localhost/SQLDeleteHandler.php';
  var data = {'student_Id': clickBtnName};
  $.post(ajaxurl, data, function(response) {
- window.location.href="http://localhost/simple_homepage.php";
+ window.location.href="http://localhost/created_redirect.html";
 });
 });
 });
@@ -43,18 +46,13 @@ $resultset = mysqli_query($connection,$query);
 
 //Display table and delete button
 while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {
-	echo $row[0]." ".$row[1]." ".$row[2]." ".$row[3]."  ".$row[4]." ".$row[5]."<input type=\"submit\" class=\"button\" name=\"".$row[0]."\"
-value=\"delete\"/><br>";
-}
-
-
+	echo $row[0]." ".$row[1]." ".$row[2]." ".$row[3]."  ".$row[4]." ".$row[5]."<input type=\"submit\" class=\"button\" name=\"".$row[0]."\"value=\"delete\"/><br>";}
 ?>
 
 
 <!-- WRITE FORM-->
 <center>
-<form enctype="multipart/form-data"
-action="http://localhost/SQLInsertHandler.php">
+<form enctype="multipart/form-data" action="SQLInsertHandler.php">
 <p>Student Id:&nbsp <input type="text" name="student_Id" size="10" maxlength="11"
 /></p>
 <p>Password:&nbsp <input type="password" name="PasswordHash" size="10"

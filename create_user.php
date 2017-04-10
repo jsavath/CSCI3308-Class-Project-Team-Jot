@@ -2,6 +2,9 @@
 <head>
 <title> Jot create Account </title>
 
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 <script>
 $(document).ready(function(){
  $('.button').click(function(){
@@ -9,7 +12,7 @@ $(document).ready(function(){
  var ajaxurl = 'http://localhost/SQLDeleteHandler.php';
  var data = {'student_Id': clickBtnName};
  $.post(ajaxurl, data, function(response) {
- window.location.href="http://localhost/simple_homepage.php";
+ window.location.href="http://localhost/created_redirect.html";
 });
 });
 });
@@ -22,20 +25,20 @@ $(document).ready(function(){
 // Define database access:
 DEFINE ('host', 'localhost');
 DEFINE ('user', 'root');
-DEFINE ('password', 'Vespa1019');
+DEFINE ('password', 'alec');
 DEFINE ('dbName', 'jot');
 
 
 
 $connection = @mysqli_connect (host,user,password,dbName); // please fill these parameters with the actual data
-if(mysqli_connect_errno())
-{
- echo "<h4>Failed to connect to MySQL: </h4>".mysqli_connect_error();
-}
-else
-{
- echo "<h4>Successfully connected to MySQL: </h4>";
-}
+// if(mysqli_connect_errno())
+// {
+//  echo "<h4>Failed to connect to MySQL: </h4>".mysqli_connect_error();
+// }
+// else
+// {
+//  echo "<h4>Successfully connected to MySQL: </h4>";
+// }
 // Query and result set
 
 $query = "Select * from simple_table;";
@@ -43,11 +46,7 @@ $resultset = mysqli_query($connection,$query);
 
 //Display table and delete button
 while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {
-	echo $row[0]." ".$row[1]." ".$row[2]." ".$row[3]."  ".$row[4]." ".$row[5]."<input type=\"submit\" class=\"button\" name=\"".$row[0]."\"
-value=\"delete\"/><br>";
-}
-
-
+	echo $row[0]." ".$row[1]." ".$row[2]." ".$row[3]."  ".$row[4]." ".$row[5]."<input type=\"submit\" class=\"button\" name=\"".$row[0]."\"value=\"delete\"/><br>";}
 ?>
 
 
