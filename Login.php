@@ -33,11 +33,6 @@ if($count==1){
     
     header('Location:Login_screen.php');
 }
-else{
-	echo "A Problem Occured";
-
-	header('Location:Login_screen.php');
-}
 ?>
 
 
