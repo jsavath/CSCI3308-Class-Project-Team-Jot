@@ -1,13 +1,16 @@
 html {
   height: 100%;
-  background-image:url(Jot_background1.png);
+  background-image:url(imgs/jot_background1.png);
   background-attachment: fixed;
   background-size: cover;
+  margin: 0px;
+  padding: 0;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 
 .header_main h1 a { /* Girish Narayanswamy Name Tag */
+  margin-top: 50px;
   margin: 0;
   padding: 0;
   color: #333333;
@@ -16,6 +19,7 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 70px;
+
 }
 
 .main_nav { /*Navigation Bar*/
@@ -23,6 +27,7 @@ html {
   opacity: .9;
 
   width: auto;
+  position: relative;
 }
 
 .main_nav ul {
@@ -81,15 +86,15 @@ html {
   transition: width .25s;
 }
 
-.about_body  {
+body {
   color: #333333;
   opacity: 1;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 25px;
-  margin: 50px;
-  padding: 0;
+  margin: 0px
+  padding: 0px;
 }
 
 .team {
