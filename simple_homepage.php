@@ -22,7 +22,7 @@ $(document).ready(function(){
 // Define database access:
 DEFINE ('host', 'localhost');
 DEFINE ('user', 'root');
-DEFINE ('password', 'Vespa1019');
+DEFINE ('password', 'alec');
 DEFINE ('dbName', 'jot');
 
 
