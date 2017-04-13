@@ -1,0 +1,37 @@
+//INSTRUCTIONS FROM SCRATCH
+
+//Update linux
+sudo apt-get update;
+
+//Configure and set up repo
+git config --global user.name "first last"
+git config --global user.email "first.last@colorado.edu"
+git clone https://github.com/BryanG1019/CSCI3308-Class-Project-Team-Jot
+
+//install and run sql with : sudo service mysql start
+sudo apt-get install mysql-server
+sudo mysql -u root -p
+
+//inside sql
+create database jot;
+use jot;
+source create_table.sql
+
+//install and run apache, test on 127.0.0.1 with files in /var/www/html/
+sudo apt-get install apache2
+sudo service apache2 restart  //RESTART APACHE AFTER EVERY CHANGE
+
+//install php
+sudo apt-get install php
+sudo apt-get install php-mysql libapache2-mod-php
+
+
+
+
+
+
+
+
+
+
+
