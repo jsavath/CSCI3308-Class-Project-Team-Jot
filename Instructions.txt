@@ -17,7 +17,7 @@ create database jot;
 use jot;
 source create_table.sql
 
-//install and run apache, test on 127.0.0.1 with files in /var/www/html/
+//install and run apache, test on 127.0.0.1 with files of current version in /var/www/html/
 sudo apt-get install apache2
 sudo service apache2 restart  //RESTART APACHE AFTER EVERY CHANGE
 
