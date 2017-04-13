@@ -1,0 +1,18 @@
+TERMINAL
+
+sudo apt-get update;
+
+git config --global user.name "first last"
+git config --global user.email "first.last@colorado.edu"
+git clone https://github.com/BryanG1019/CSCI3308-Class-Project-Team-Jot
+
+
+sudo apt-get install mysql-server
+sudo mysql -u root -p
+
+
+
+
+
+
+
