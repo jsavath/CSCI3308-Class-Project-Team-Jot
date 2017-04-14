@@ -24,10 +24,12 @@ sudo service apache2 restart  //RESTART APACHE AFTER EVERY CHANGE
 //install php
 sudo apt-get install php
 sudo apt-get install php-mysql libapache2-mod-php
+sudo service apache2 restart 
 
-
-
-
+//set permissions to /var/www/html/
+sudo chmod 777 var
+sudo chmod 777 var/www
+sudo chmod 777 var/www/html
 
 
 
