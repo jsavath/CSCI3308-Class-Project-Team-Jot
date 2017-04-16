@@ -16,6 +16,7 @@ sudo mysql -u root -p
 create database jot;
 use jot;
 source create_table.sql
+source create_notes.sql
 
 //install and run apache, test on 127.0.0.1 with files of current version in /var/www/html/
 sudo apt-get install apache2
