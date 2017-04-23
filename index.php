@@ -1,0 +1,1 @@
+<?php header( 'Location: /build0.5.1/jot_home.php' ) ;  ?>
